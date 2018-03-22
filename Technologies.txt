@@ -1,0 +1,53 @@
+Frontend
+  Website
+    Angular
+    ???
+    
+  Game
+    Engine
+        PixiJS - Provides WebGL/HTML5 Canvas framework. Used for all graphics and creation. Allows native JS. Doesn't support 3d.
+        Unity - Well tested game engine that supports webgl. Requires licensing. but has tons of documentation and assests. Could allow easy non webbrowser mode.
+        ThreeJS - Same thing as pixijs but it's for 3d applications. Not as fast as pixijs
+    Animations
+        Spline (Dragonbones) - Allows for easier custom animations to be called, more robust then spritesheets
+            http://pixijs.io/examples/#/spine/dragon.js
+        Spritesheets - Basic animations that is tried and true
+    Networking
+      Primus - Socket Abstraction layer that allows us to change what we use for sockets without changing code. We can test any socket framework we want
+        NODE WS - From brief research it is supposed to be the fastest implementation of sockets
+        Socket.io - A tried and true socket method
+        ???
+        
+        
+Backend        
+  Game
+    Engine
+      NodeJS + Pixi - PIXIJS should allow us to run our code using nodeJS to create a server instance
+    Networking
+      Primus
+        NODE WS
+        Socket.io
+        ???
+        
+Language
+
+Native Javascript with ES6 
+  Pro
+      Tried and true javascript
+      Full control over everything we do
+      Tons of documentation on everything we want to do is online already
+  Cons
+      Becomes significantly more complex with a larger player base
+      ???
+      
+Typescript
+  Pro
+      Cleaner scripting
+      Static Typing/Improvements to help the project grow larger
+  Cons
+      Makes debuging more difficult
+      Possibility of errors in compiling
+      Does it play well with our libraries?
+      Have to learn typescript/convert javascript exampels to typescript
+      
+  
