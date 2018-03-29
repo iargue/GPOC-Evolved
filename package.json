@@ -1,0 +1,28 @@
+{
+  "name": "gpoc-evolved",
+  "version": "1.0.0",
+  "description": "Advanced Proof of Concept",
+  "main": "index.js",
+  "dependencies": {
+    "@types/pixi.js": "^4.7.2",
+    "concurrently": "^3.5.1",
+    "cpx": "^1.5.0",
+    "pixi.js": "^4.7.1",
+    "typescript": "^2.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"tsc -w\" \"start /d server start.bat\" \"cpx src/**/*.{html,png,jpg} dist --watch\"",
+    "stop": "start /d server stop.bat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iargue/GPOC-Evolved.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iargue/GPOC-Evolved/issues"
+  },
+  "homepage": "https://github.com/iargue/GPOC-Evolved#readme"
+}
