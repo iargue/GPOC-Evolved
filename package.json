@@ -7,12 +7,16 @@
     "@types/pixi.js": "^4.7.2",
     "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
-    "pixi.js": "^4.7.1",
-    "typescript": "^2.8.1"
+    "pixi.js": "^4.7.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
   "scripts": {
-    "start": "concurrently \"tsc -w\" \"start /d server start.bat\" \"cpx src/**/*.{html,png,jpg} dist --watch\"",
+    "start": "concurrently \"tsc -w\" \"start /d server start.bat\" \"cpx src/**/*.{html,png,jpg} dist --watch\" \"webpack-cli --watch\"",
     "stop": "start /d server stop.bat"
   },
   "repository": {
