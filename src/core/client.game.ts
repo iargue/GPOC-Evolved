@@ -1,9 +1,12 @@
 
 import {renderer} from '../renderer/renderer.game'
 import {options} from '../options/options.game'
+import {network} from '../network/client.game'
+
 
 var gameOptions = new options(false)
 gameOptions.core.renderer = new renderer('none', window.innerWidth, window.innerWidth, '0x009900')
+var gameNetwork = new network()
 
 console.log(gameOptions)
 
